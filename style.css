@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.section{
+    background-color: rgb(205, 204, 204);
+    
+}
+.navbare{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.but{
+    width: 80px;
+    height: 80px;
+    background-color: transparent;
+    border: 0;
+
+}
+.card{
+    background-color: gray;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 400px;
+    height: 100vh;
+    transition: 0.5s;
+  
+}
+.card h2{
+    margin: 20px;
+}
+.card1{
+    display: flex;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.card1 input{
+    width: 50%;
+}
+.card1 button{
+    width: 50%;
+    background-color: black;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.product{
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    text-align: center;
+}
+.pro{
+    padding: 10px;
+    background-color: transparent;
+    box-shadow: 10px 5px 5px 10px grey;
+    gap: 10px;
+}
+
+nav h1{
+    text-transform: capitalize;
+    font-size: 30px;
+}
+nav button img{
+    width: 40px;
+}
+.pro img{
+    height: 300px;
+    width: 250px;
+    border-radius: 5px;
+
+}
+.title{
+    
+    font-weight: bold;
+    font-size: 30px;
+}
+.btnadd{
+    width: 250px;
+    grid-area: btn;
+    background-color: black;
+    color: aliceblue;
+    font-size: 25px;
+}
+.add{
+    position: relative;
+}
+span{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 50px;
+    bottom: 45px;
+    background-color: red;
+    z-index: 1;
+    text-align: center;
+    border-radius: 50%;
+    color: aliceblue;
+
+}
+.action .card{
+    left: calc(100% - 400px);
+}
+.action .section{
+    transform: translateX(-100px);
+}
+li img{
+    
+    height: 70px;
+
+}
+li{
+    border: solid;
+    height: 80px;
+    display: flex;
+    margin: 10px;
+    gap: 30px;
+    align-items: center;
+}
